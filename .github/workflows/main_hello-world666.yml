@@ -7,6 +7,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
@@ -31,4 +32,4 @@ jobs:
       with:
         app-name: 'hello-world666'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_07d6b974fe2c40388f6dbaa93f288ea6 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_1e4c6ccdc553484684d16605c63f8296 }}
